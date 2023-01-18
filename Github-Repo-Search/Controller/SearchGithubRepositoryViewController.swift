@@ -26,6 +26,9 @@ class SearchGithubRepositoryViewController: UIViewController {
             .flatMap { searchQuery in
                 return Future { promise in
                     self.searchGithubViewModel.searchRepo(with: searchQuery) { result, error in
+                        #if DEBUG
+                        debugPrint(error as Any)
+                        #endif
                         promise(.success(result))
                     }
                 }

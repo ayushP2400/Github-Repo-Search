@@ -8,7 +8,7 @@
 import Foundation
 
 class Constants {
-    static let githubAccessToken = "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"
+    static let githubAccessToken = "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"
     static let githubBaseURL = "https://api.github.com"
     
     enum GithubSearchEndpoints: String {
@@ -18,3 +18,4 @@ class Constants {
         }
     }
 }
+
